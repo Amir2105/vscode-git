@@ -17,9 +17,9 @@ namespace RayaneGostar.Application.Services
             _passwordHelper = passwordHelper;
         }
 
-        public Task<User> GetUserByPhoneNumber(string phoneNumber)
+        public async Task<User> GetUserByPhoneNumber(string phoneNumber)
         {
-            return await _userRepository.GetUserByPhoneNumber(phoneNumber);
+            return await _userReopsitory.GetUserByPhoneNumber(phoneNumber);
         }
 
 
