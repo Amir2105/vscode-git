@@ -17,7 +17,10 @@ namespace RayaneGostar.Application.Services
             _passwordHelper = passwordHelper;
         }
 
-
+        public async Task<LoginUserResult> LoginUser(LoginUserViewModel login)
+        {
+            var user = await _userReopsitory.GetUserByPhoneNumber(login.PhoneNumber);
+        }
 
 
         public async Task<RegisterUserResult> RegisterUser(RegisterUserViewModel register)
