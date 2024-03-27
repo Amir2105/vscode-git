@@ -1,5 +1,6 @@
 using RayaneGostar.Application.Interfaces;
 using RayaneGostar.Domain.Interfaces;
+using RayaneGostar.Domain.Models.Account;
 
 namespace RayaneGostar.Infra.Data.Repositories
 {
@@ -29,6 +30,15 @@ namespace RayaneGostar.Infra.Data.Repositories
             await _context.SaveChangesAsync();
         }
 
+        public Task CreateUser(User user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<User> GetUserByPhoneNumber(string phoneNumber)
+        {
+            return await _context.Users.AsQueryable().SingleOrDefaultAsync(c => c.PhoneNumber == phoneNumber);
+        }
     }
     #endregion
 
