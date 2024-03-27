@@ -1,10 +1,27 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.CodeAnalysis.Options;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using RayaneGostar.Infra.Data.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme=CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme=CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultSignInScheme=CookieAuthenticationDefaults.AuthenticationScheme;
+}).AddCookie(Options =>
+{
+    Options.LoginPath="/login";
+    Options.LogoutPath="/log-out";
+    Options.ExpireTimeSpan= TimeSpan.FromMinutes(43200);
+});
+
+
 
 builder.Services.AddDbContext<RDbContetx>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
