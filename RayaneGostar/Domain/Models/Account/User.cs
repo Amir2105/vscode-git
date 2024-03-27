@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using RayaneGostar.Domain.Models.BaseEntities;
 
 namespace RayaneGostar.Domain.Models.Account
 {
