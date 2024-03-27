@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CT7Vp4vMKINxbLIOunAw3WNHfvelJaDKzuXOTwwTSHGBLOEt2sMk5z1w2RWwcpv1Clf/hNWmnCterNZzWIBKBA==",
+  "dgSpecHash": "mvQvQ+f26J42aZWzqB3ZRiIRW3CChjwNwlNSYTl4MItSNnEyd+Ge3Gtxneluo3c6HVePYnNXTfDFXpmTp72/lg==",
   "success": true,
   "projectFilePath": "D:\\C#Learning\\Web\\vscode-git\\RayaneGostar\\RayaneGostar.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.5\\microsoft.entityframeworkcore.design.6.0.5.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.5\\microsoft.entityframeworkcore.relational.6.0.5.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.5\\microsoft.entityframeworkcore.sqlserver.6.0.5.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.5\\microsoft.entityframeworkcore.tools.6.0.5.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
