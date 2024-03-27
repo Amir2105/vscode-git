@@ -17,6 +17,9 @@ namespace RayaneGostar.Application.Services
             _passwordHelper = passwordHelper;
         }
 
+
+
+
         public async Task<RegisterUserResult> RegisterUser(RegisterUserViewModel register)
         {
             if (!await _userReopsitory.IsUserExitsPhoneNumbe(register.PhoneNumber))
