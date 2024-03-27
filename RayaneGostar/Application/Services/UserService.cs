@@ -1,15 +1,17 @@
 using RayaneGostar.Application.Interfaces;
+using RayaneGostar.Domain.Interfaces;
 using RayaneGostar.Domain.Models.Account;
 using RayaneGostar.Domain.Models.ViewModels;
+using RayaneGostar.Infra.Data.Repositories;
 
 namespace RayaneGostar.Application.Services
 {
     public class UserService : IUserService
     {
-        private readonly IUserReopsitory _userReopsitory;
+        private readonly IUserRepository _userReopsitory;
         private readonly IPasswordHelper _passwordHelper;
 
-        public UserService(IUserReopsitory userReopsitory, PasswordHelper passwordHelper)
+        public UserService(UserRepository userReopsitory, PasswordHelper passwordHelper)
         {
             _userReopsitory = userReopsitory;
             _passwordHelper = passwordHelper;
@@ -35,9 +37,9 @@ namespace RayaneGostar.Application.Services
                 };
                 return RegisterUserResult.Success;
             }
+            await _userReopsitory.CreateUser(user);
             return RegisterUserResult.MobileExists;
         }
 
     }
-}
 }
