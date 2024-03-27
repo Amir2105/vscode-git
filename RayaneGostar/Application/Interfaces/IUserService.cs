@@ -1,3 +1,4 @@
+using RayaneGostar.Domain.Models.Account;
 using RayaneGostar.Domain.Models.ViewModels;
 
 namespace RayaneGostar.Application.Interfaces
@@ -7,6 +8,7 @@ namespace RayaneGostar.Application.Interfaces
         #region Account
         Task<RegisterUserResult> RegisterUser(RegisterUserViewModel register);
         Task<LoginUserResult> LoginUser(LoginUserViewModel login);
+        Task<User>GetUserByPhoneNumber(string phoneNumber);
 
         #endregion
 
