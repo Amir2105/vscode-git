@@ -1,8 +1,9 @@
 using RayaneGostar.Application.Interfaces;
+using RayaneGostar.Domain.Interfaces;
 
 namespace RayaneGostar.Infra.Data.Repositories
 {
-    public class UserRepository : IUserReopsitory
+    public class UserRepository : IUserRepository
 
     {
         #region Constarctor
