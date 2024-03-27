@@ -38,6 +38,7 @@ namespace RayaneGostar.Application.Services
                 return RegisterUserResult.Success;
             }
             await _userReopsitory.CreateUser(user);
+            await _userReopsitory.SaveChange();
             return RegisterUserResult.MobileExists;
         }
 
