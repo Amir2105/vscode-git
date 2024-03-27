@@ -5,6 +5,7 @@ namespace RayaneGostar.Domain.Interfaces
         #region Account
         Task<bool> IsUserExitsPhoneNumbe(string phoneNumber);
         Task CreateUser<User user>;
+        Task SaveChange();
         #endregion
     }
 }
