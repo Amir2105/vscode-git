@@ -13,10 +13,16 @@ namespace RayaneGostar.Infra.Data.Repositories
         }
 
         #endregion
-        public Task<bool> IsUserExitsPhoneNumbe(string phoneNumber)
+        #region Account
+        public async Task<bool> IsUserExitsPhoneNumbe(string phoneNumber)
         {
-
+            return await _context.Users.AsQueryable()
+.AnyAsync(c => c.PhoneNumber == phoneNumber);
         }
 
     }
+    #endregion
+
+
+}
 }
