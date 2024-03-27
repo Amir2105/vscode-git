@@ -24,6 +24,11 @@ namespace RayaneGostar.Infra.Data.Repositories
             await _context.Users.AddAsync(user);
         }
 
+        public async Task SaveChange()
+        {
+            await _context.SaveChangesAsync();
+        }
+
     }
     #endregion
 
