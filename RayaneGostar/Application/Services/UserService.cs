@@ -1,4 +1,5 @@
 using RayaneGostar.Application.Interfaces;
+using RayaneGostar.Domain.Models.ViewModels;
 
 namespace RayaneGostar.Application.Services
 {
@@ -7,8 +8,12 @@ namespace RayaneGostar.Application.Services
         private readonly IUserReopsitory _userReopsitory;
         public UserService(IUserReopsitory userReopsitory)
         {
-           _userReopsitory = userReopsitory; 
+            _userReopsitory = userReopsitory;
         }
 
+        public Task<RegisterUserResult> RegisterUser(RegisterUserViewModel register)
+        {
+
+        }
     }
 }
