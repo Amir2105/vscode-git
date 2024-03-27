@@ -7,9 +7,12 @@ namespace RayaneGostar.Application.Services
     public class UserService : IUserService
     {
         private readonly IUserReopsitory _userReopsitory;
-        public UserService(IUserReopsitory userReopsitory)
+        private readonly IPasswordHelper _passwordHelper;
+
+        public UserService(IUserReopsitory userReopsitory, PasswordHelper passwordHelper)
         {
             _userReopsitory = userReopsitory;
+            _passwordHelper = passwordHelper;
         }
 
         public async Task<RegisterUserResult> RegisterUser(RegisterUserViewModel register)
@@ -21,7 +24,7 @@ namespace RayaneGostar.Application.Services
                     FirstName = register.FirstName,
                     LastName = register.LastName,
                     UserGender = UserGender.Unknown,
-                    Password = "",
+                    Password = _passwordHelper.EncodePasswordMd5(register.Password),
                     PhoneNumber = register.PhoneNumber,
                     Avatar = "Default.Png",
                     IsMobileActive = false,
@@ -30,8 +33,11 @@ namespace RayaneGostar.Application.Services
                     IsDelete = false,
 
                 };
+                return RegisterUserResult.Success;
             }
-
+            return RegisterUserResult.MobileExists;
         }
+
     }
+}
 }
