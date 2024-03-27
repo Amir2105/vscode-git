@@ -16,8 +16,7 @@ namespace RayaneGostar.Infra.Data.Repositories
         #region Account
         public async Task<bool> IsUserExitsPhoneNumbe(string phoneNumber)
         {
-            return await _context.Users.AsQueryable()
-.AnyAsync(c => c.PhoneNumber == phoneNumber);
+            return await _context.Users.AsQueryable().AnyAsync(c => c.PhoneNumber == phoneNumber);
         }
 
     }
