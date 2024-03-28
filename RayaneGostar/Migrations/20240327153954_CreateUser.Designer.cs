@@ -11,7 +11,7 @@ using RayaneGostar.Infra.Data.Context;
 
 namespace RayaneGostar.Migrations
 {
-    [DbContext(typeof(RDbContetx))]
+    [DbContext(typeof(RDbContext))]
     [Migration("20240327153954_CreateUser")]
     partial class CreateUser
     {

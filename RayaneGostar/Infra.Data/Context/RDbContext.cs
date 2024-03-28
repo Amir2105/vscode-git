@@ -3,11 +3,11 @@ using RayaneGostar.Domain.Models.Account;
 
 namespace RayaneGostar.Infra.Data.Context
 {
-    public class RDbContetx : DbContext
+    public class RDbContext:DbContext
     {
-        public RDbContetx(DbContextOptions<RDbContetx> options) : base(options)
+        public RDbContext(DbContextOptions<RDbContext> options):base(options)
         {
-
+            
         }
         #region User
         public DbSet<User> Users { get; set; }

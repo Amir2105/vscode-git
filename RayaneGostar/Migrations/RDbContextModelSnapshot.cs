@@ -10,7 +10,7 @@ using RayaneGostar.Infra.Data.Context;
 
 namespace RayaneGostar.Migrations
 {
-    [DbContext(typeof(RDbContetx))]
+    [DbContext(typeof(RDbContext))]
     partial class RDbContetxModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

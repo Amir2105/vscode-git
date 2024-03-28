@@ -1,6 +1,8 @@
+using Microsoft.EntityFrameworkCore;
 using RayaneGostar.Application.Interfaces;
 using RayaneGostar.Domain.Interfaces;
 using RayaneGostar.Domain.Models.Account;
+using RayaneGostar.Infra.Data.Context;
 
 namespace RayaneGostar.Infra.Data.Repositories
 {
@@ -20,7 +22,7 @@ namespace RayaneGostar.Infra.Data.Repositories
         {
             return await _context.Users.AsQueryable().AnyAsync(c => c.PhoneNumber == phoneNumber);
         }
-        public async Task CreateUser<User, user>()
+        public async Task CreateUser<User user>()
         {
             await _context.Users.AddAsync(user);
         }
@@ -43,5 +45,4 @@ namespace RayaneGostar.Infra.Data.Repositories
     #endregion
 
 
-}
 }

@@ -1,26 +1,28 @@
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
+
 namespace RayaneGostar.Views.Shared.Component.ViewComponent
 {
     public class SiteViewComponent
     {
-        #region siteHeader
-        public class SiteHeaderViewComponent :ViewComponent
+        #region site header
+        public class SiteHeaderViewComponent : ViewComponent
         {
-            public async Task<IViewComponentResult>InvokeAsync()
+            public async Task<IViewComponentResult> InvokeAsync()
             {
-               return View("SiteHeader") ;
+                return View("SiteHeader");
             }
         }
-            
         #endregion
-            #region siteFooter
-        public class SiteFooterViewComponent :ViewComponent
+
+        #region site footer
+        public class SiteFooterViewComponent : ViewComponent
         {
-            public async Task<IViewComponentResult>InvokeAsync()
+            public async Task<IViewComponentResult> InvokeAsync()
             {
-               return View("SiteFooter") ;
+                return View("SiteFooter");
             }
         }
-            
         #endregion
     }
 }

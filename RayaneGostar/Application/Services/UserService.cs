@@ -25,7 +25,7 @@ namespace RayaneGostar.Application.Services
 
         public async Task<LoginUserResult> LoginUser(LoginUserViewModel login)
         {
-            var user = await _userReopsitory.GetUserByPhoneNumber(login.PhoneNumber)
+            var user = await _userReopsitory.GetUserByPhoneNumber(login.PhoneNumber);
             if (user == null) return LoginUserResult.NotFound;
             if (user.IsBlocked) return LoginUserResult.IsBlocked;
             if (!user.IsMobileActive) return LoginUserResult.NotActive;

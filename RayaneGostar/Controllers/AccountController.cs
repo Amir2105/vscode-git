@@ -65,7 +65,8 @@ namespace RayaneGostar.Controllers
                         var user = await _userService.GetUserByPhoneNumber(login.PhoneNumber);
                         var Claims = new List<Claim>
                         {
-                            new Claim(ClaimTypes.Name,User.PhoneNmber),
+
+                            new Claim(ClaimTypes.Name,user.PhoneNumber),
                             new Claim(ClaimTypes.NameIdentifier,user.Id.ToString())
                         };
                         var identity = new ClaimsIdentity(Claims, CookieAuthenticationDefaults.AuthenticationScheme);

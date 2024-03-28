@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>@ViewData["Title"]</title>
-    <@Html.Partial("_TagRefrencess.cshtml", Model)
-    <@Html.Partial("_HeaderRefrences.cshtml", Model)
+    <@Html.Partial("_TagRefrencess.cshtml")
+    <@Html.Partial("_HeaderRefrences.cshtml")
     @RenderSection("style",false)
 </head>
 
@@ -60,13 +60,8 @@
             </div>
         </div>
     </div>
-<@Html.Partial("_Mobile", Model)   
-<@Html.Partial("_FooterRefrences", Model)
+<@Html.Partial("_Mobile")   
+<@Html.Partial("_FooterRefrences")
 @RenderSection("Script", false)
 </body>
-
-
-<!-- Mirrored from filenter.ir/molla/index-4.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Jul 2021 07:18:12 GMT -->
-
-<!-- Mirrored from products.theme-file.ir/productshtml/Molla/molla/index-4.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Jul 2021 05:57:32 GMT -->
 </html>
