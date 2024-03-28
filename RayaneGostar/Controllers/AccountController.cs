@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using RayaneGostar.Application.Interfaces;
 using RayaneGostar.Domain.Models.ViewModels;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace RayaneGostar.Controllers
 {
@@ -35,6 +36,8 @@ namespace RayaneGostar.Controllers
                 switch (result)
                 {
                     case RegisterUserResult.MobileExists:
+
+                        TempData(ErrorMessage) = "123";
                         break;
                     case RegisterUserResult.Success:
                         break;
