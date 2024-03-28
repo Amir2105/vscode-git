@@ -6,7 +6,7 @@ namespace RayaneGostar.Application.Services
 {
     public class PasswordHelper : IPasswordHelper
     {
-        public string EncodePasswordMd5(string password)
+        public string EncodePasswordMd5(string pass)
         {
             Byte[] originalBytes;
             Byte[] encodedBytes;
