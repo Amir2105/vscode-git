@@ -7,31 +7,36 @@ using Microsoft.CodeAnalysis.Options;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using RayaneGostar.Infra.Data.Context;
+using RayaneGostar.Application.Interfaces;
+using RayaneGostar.Application.Services;
+using RayaneGostar.Domain.Interfaces;
+using RayaneGostar.Infra.Data.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-services.AddScoped<IPasswordHelper, PasswordHelper>();
-services.AddScoped<IUserService, UserService>();
-services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IPasswordHelper, PasswordHelper>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
+
 
 builder.Services.AddAuthentication(options =>
 {
-    options.DefaultAuthenticateScheme=CookieAuthenticationDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme=CookieAuthenticationDefaults.AuthenticationScheme;
-    options.DefaultSignInScheme=CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
 }).AddCookie(Options =>
 {
-    Options.LoginPath="/login";
-    Options.LogoutPath="/log-out";
-    Options.ExpireTimeSpan= TimeSpan.FromMinutes(43200);
+    Options.LoginPath = "/login";
+    Options.LogoutPath = "/log-out";
+    Options.ExpireTimeSpan = TimeSpan.FromMinutes(43200);
 });
 
 
 
-builder.Services.AddDbContext<RDbContetx>(options =>
+builder.Services.AddDbContext<RDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
 

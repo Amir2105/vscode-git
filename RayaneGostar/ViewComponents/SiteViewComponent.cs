@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
 
-namespace RayaneGostar.Views.Shared.Component.ViewComponent
+namespace RayaneGostar.ViewComponents
 {
     public class SiteViewComponent
     {
         #region site header
+
         public class SiteHeaderViewComponent : ViewComponent
         {
             public async Task<IViewComponentResult> InvokeAsync()
@@ -13,9 +13,10 @@ namespace RayaneGostar.Views.Shared.Component.ViewComponent
                 return View("SiteHeader");
             }
         }
-        #endregion
 
-        #region site footer
+        #endregion
+        #region site header
+
         public class SiteFooterViewComponent : ViewComponent
         {
             public async Task<IViewComponentResult> InvokeAsync()
@@ -23,6 +24,7 @@ namespace RayaneGostar.Views.Shared.Component.ViewComponent
                 return View("SiteFooter");
             }
         }
+
         #endregion
     }
 }

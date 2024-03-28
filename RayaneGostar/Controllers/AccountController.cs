@@ -1,33 +1,37 @@
 using System.Security.Claims;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using RayaneGostar.Application.Interfaces;
 using RayaneGostar.Domain.Models.ViewModels;
+using System.Threading.Tasks;
 
 namespace RayaneGostar.Controllers
 {
     public class AccountController : SiteBaseController
     {
-        #region Constarctor
+        #region Constructor
         private readonly IUserService _userService;
         public AccountController(IUserService userService)
         {
             _userService = userService;
         }
         #endregion
+
         #region register
         [HttpGet("register")]
         public IActionResult Register()
         {
             return View();
         }
+
         [HttpPost("register"), ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(RegisterUserViewModel regiter)
+        public async Task<IActionResult> Register(RegisterUserViewModel register)
         {
             if (ModelState.IsValid)
             {
-                var result = await _userService.RegisterUser(regiter);
+                var result = await _userService.RegisterUser(register);
                 switch (result)
                 {
                     case RegisterUserResult.MobileExists:
@@ -35,24 +39,24 @@ namespace RayaneGostar.Controllers
                     case RegisterUserResult.Success:
                         break;
                 }
-
             }
-            return View(regiter);
+            return View(register);
         }
         #endregion
 
         #region login
-
         [HttpGet("login")]
-        public IActionResult login()
+        public IActionResult Login()
         {
             return View();
         }
+
         [HttpPost("login"), ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginUserViewModel login)
         {
             if (ModelState.IsValid)
             {
+                var result = await _userService.LoginUser(login);
                 switch (result)
                 {
                     case LoginUserResult.NotActive:
@@ -63,13 +67,12 @@ namespace RayaneGostar.Controllers
                         break;
                     case LoginUserResult.Success:
                         var user = await _userService.GetUserByPhoneNumber(login.PhoneNumber);
-                        var Claims = new List<Claim>
+                        var claims = new List<Claim>
                         {
-
-                            new Claim(ClaimTypes.Name,user.PhoneNumber),
-                            new Claim(ClaimTypes.NameIdentifier,user.Id.ToString())
+                            new Claim(ClaimTypes.Name, user.PhoneNumber),
+                            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
                         };
-                        var identity = new ClaimsIdentity(Claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                        var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                         var principle = new ClaimsPrincipal(identity);
                         var properties = new AuthenticationProperties
                         {
@@ -77,14 +80,10 @@ namespace RayaneGostar.Controllers
                         };
                         await HttpContext.SignInAsync(principle, properties);
                         return Redirect("/");
-
                 }
-                return View(login);
-
             }
+            return View(login);
         }
-
-
         #endregion
     }
 }
