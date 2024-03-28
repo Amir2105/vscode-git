@@ -19,35 +19,30 @@ namespace RayaneGostar.Infra.Data.Repositories
         #endregion
 
         #region Account
-        public async Task<bool> IsUserExistsPhoneNumber(string phoneNumber)
-        {
-            return await _context.Users.AsQueryable().AnyAsync(c => c.PhoneNumber == phoneNumber);
-        }
 
         public async Task CreateUser(User user)
         {
             await _context.Users.AddAsync(user);
         }
 
-        public async Task SaveChanges()
-        {
-            await _context.SaveChangesAsync();
-        }
 
         public async Task<User> GetUserByPhoneNumber(string phoneNumber)
         {
             return await _context.Users.AsQueryable().SingleOrDefaultAsync(c => c.PhoneNumber == phoneNumber);
         }
 
-        public Task<bool> IsUserExitsPhoneNumbe(string phoneNumber)
+        public async Task<bool> IsUserExitsPhoneNumbe(string phoneNumber)
         {
-            throw new NotImplementedException();
+            return await _context.Users.AsQueryable().AnyAsync(c => c.PhoneNumber == phoneNumber);
         }
 
-        public Task SaveChange()
+        public async Task SaveChange()
         {
-            throw new NotImplementedException();
+            await _context.SaveChangesAsync();
         }
+
+
+
 
 
         #endregion
