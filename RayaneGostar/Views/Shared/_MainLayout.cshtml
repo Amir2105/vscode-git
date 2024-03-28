@@ -26,8 +26,8 @@
     <meta name="msapplication-TileColor" content="#cc9966">
     <meta name="msapplication-config" content="assets/images/icons/browserconfig.html">
     <meta name="theme-color" content="#ffffff">
-    
-    
+    <@Html.Partial("_HeaderRefrences.cshtml", Model)
+    @RenderSection("style",false)
 </head>
 
 <body>
@@ -4358,7 +4358,8 @@
             </div>
         </div>
     </div>
-
+<@Html.Partial("_FooterRefrences", Model)
+@RenderSection("Script", false)
 </body>
 
 
