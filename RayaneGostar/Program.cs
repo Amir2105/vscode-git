@@ -1,3 +1,7 @@
+using System.ComponentModel;
+using System.Reflection.Metadata;
+using System;
+using System.Collections.Immutable;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.CodeAnalysis.Options;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +12,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+services.AddScoped<IPasswordHelper, PasswordHelper>();
+services.AddScoped<IUserService, UserService>();
+services.AddScoped<IUserRepository, UserRepository>();
 
 builder.Services.AddAuthentication(options =>
 {
