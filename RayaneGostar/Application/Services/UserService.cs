@@ -11,7 +11,7 @@ namespace RayaneGostar.Application.Services
         private readonly IUserRepository _userReopsitory;
         private readonly IPasswordHelper _passwordHelper;
 
-        public UserService(UserRepository userReopsitory, PasswordHelper passwordHelper)
+        public UserService(IUserRepository userReopsitory, IPasswordHelper passwordHelper)
         {
             _userReopsitory = userReopsitory;
             _passwordHelper = passwordHelper;

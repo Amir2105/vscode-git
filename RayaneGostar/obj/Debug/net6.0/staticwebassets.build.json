@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MwtKXipslKbcgZKBNMpnMSHtQKVnIhXihalh6+gObfE=",
+  "Hash": "XCqvSW1VF1NZf0RdE5DOCU97aO0ExM05mJp2mXvIhDA=",
   "Source": "RayaneGostar",
   "BasePath": "_content/RayaneGostar",
   "Mode": "Default",
@@ -578,6 +578,23 @@
       "OriginalItemSpec": "wwwroot\\css\\demos\\demo-9.css"
     },
     {
+      "Identity": "D:\\C#Learning\\Web\\vscode-git\\RayaneGostar\\wwwroot\\css\\notification.css",
+      "SourceId": "RayaneGostar",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#Learning\\Web\\vscode-git\\RayaneGostar\\wwwroot\\",
+      "BasePath": "_content/RayaneGostar",
+      "RelativePath": "css/notification.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\notification.css"
+    },
+    {
       "Identity": "D:\\C#Learning\\Web\\vscode-git\\RayaneGostar\\wwwroot\\css\\plugins\\jquery.countdown.css",
       "SourceId": "RayaneGostar",
       "SourceType": "Discovered",
@@ -661,6 +678,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\plugins\\owl-carousel\\owl.video.play.html"
+    },
+    {
+      "Identity": "D:\\C#Learning\\Web\\vscode-git\\RayaneGostar\\wwwroot\\css\\site.css",
+      "SourceId": "RayaneGostar",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#Learning\\Web\\vscode-git\\RayaneGostar\\wwwroot\\",
+      "BasePath": "_content/RayaneGostar",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
       "Identity": "D:\\C#Learning\\Web\\vscode-git\\RayaneGostar\\wwwroot\\css\\skins\\skin-demo-10.css",
@@ -29563,6 +29597,23 @@
       "OriginalItemSpec": "wwwroot\\js\\captcha.js"
     },
     {
+      "Identity": "D:\\C#Learning\\Web\\vscode-git\\RayaneGostar\\wwwroot\\js\\Custom.js",
+      "SourceId": "RayaneGostar",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#Learning\\Web\\vscode-git\\RayaneGostar\\wwwroot\\",
+      "BasePath": "_content/RayaneGostar",
+      "RelativePath": "js/Custom.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Custom.js"
+    },
+    {
       "Identity": "D:\\C#Learning\\Web\\vscode-git\\RayaneGostar\\wwwroot\\js\\demos\\demo-10.js",
       "SourceId": "RayaneGostar",
       "SourceType": "Discovered",
@@ -30209,6 +30260,23 @@
       "OriginalItemSpec": "wwwroot\\js\\main.js"
     },
     {
+      "Identity": "D:\\C#Learning\\Web\\vscode-git\\RayaneGostar\\wwwroot\\js\\notification.js",
+      "SourceId": "RayaneGostar",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#Learning\\Web\\vscode-git\\RayaneGostar\\wwwroot\\",
+      "BasePath": "_content/RayaneGostar",
+      "RelativePath": "js/notification.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\notification.js"
+    },
+    {
       "Identity": "D:\\C#Learning\\Web\\vscode-git\\RayaneGostar\\wwwroot\\js\\nouislider.min.js",
       "SourceId": "RayaneGostar",
       "SourceType": "Discovered",
@@ -30275,6 +30343,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\plugins.min.js"
+    },
+    {
+      "Identity": "D:\\C#Learning\\Web\\vscode-git\\RayaneGostar\\wwwroot\\js\\site.js",
+      "SourceId": "RayaneGostar",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#Learning\\Web\\vscode-git\\RayaneGostar\\wwwroot\\",
+      "BasePath": "_content/RayaneGostar",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
       "Identity": "D:\\C#Learning\\Web\\vscode-git\\RayaneGostar\\wwwroot\\js\\superfish.min.js",
