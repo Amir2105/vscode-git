@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace RayaneGostar.Domain.Models.ViewModels
+namespace RayaneGostar.Domain.Models.ViewModels.Account
 {
     public class LoginUserViewModel
     {
