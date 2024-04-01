@@ -8,65 +8,65 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RayaneGostar
 build_property.RootNamespace = RayaneGostar
-build_property.ProjectDir = D:\C#Learning\Web\vscode-git\RayaneGostar\
+build_property.ProjectDir = D:\C#Learning\web\vscode-git\RayaneGostar\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\C#Learning\Web\vscode-git\RayaneGostar
+build_property.MSBuildProjectDirectory = D:\C#Learning\web\vscode-git\RayaneGostar
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/C\#Learning/Web/vscode-git/RayaneGostar/Views/Home/Index.cshtml]
+[D:/C\#Learning/web/vscode-git/RayaneGostar/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#Learning/Web/vscode-git/RayaneGostar/Views/Home/Privacy.cshtml]
+[D:/C\#Learning/web/vscode-git/RayaneGostar/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#Learning/Web/vscode-git/RayaneGostar/Views/Shared/Components/SiteFooter/SiteFooter.cshtml]
+[D:/C\#Learning/web/vscode-git/RayaneGostar/Views/Shared/Components/SiteFooter/SiteFooter.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2l0ZUZvb3RlclxTaXRlRm9vdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#Learning/Web/vscode-git/RayaneGostar/Views/Shared/Components/SiteHeader/SiteHeader.cshtml]
+[D:/C\#Learning/web/vscode-git/RayaneGostar/Views/Shared/Components/SiteHeader/SiteHeader.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2l0ZUhlYWRlclxTaXRlSGVhZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#Learning/Web/vscode-git/RayaneGostar/Views/Shared/Error.cshtml]
+[D:/C\#Learning/web/vscode-git/RayaneGostar/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#Learning/Web/vscode-git/RayaneGostar/Views/Shared/_FooterRefrences.cshtml]
+[D:/C\#Learning/web/vscode-git/RayaneGostar/Views/Shared/_FooterRefrences.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXJSZWZyZW5jZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#Learning/Web/vscode-git/RayaneGostar/Views/Shared/_HeaderRefrences.cshtml]
+[D:/C\#Learning/web/vscode-git/RayaneGostar/Views/Shared/_HeaderRefrences.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXJSZWZyZW5jZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#Learning/Web/vscode-git/RayaneGostar/Views/Shared/_MainLayout.cshtml]
+[D:/C\#Learning/web/vscode-git/RayaneGostar/Views/Shared/_MainLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYWluTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#Learning/Web/vscode-git/RayaneGostar/Views/Shared/_Message.cshtml]
+[D:/C\#Learning/web/vscode-git/RayaneGostar/Views/Shared/_Message.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NZXNzYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#Learning/Web/vscode-git/RayaneGostar/Views/Shared/_Mobile.cshtml]
+[D:/C\#Learning/web/vscode-git/RayaneGostar/Views/Shared/_Mobile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Nb2JpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#Learning/Web/vscode-git/RayaneGostar/Views/Shared/_TagRefrences.cshtml]
+[D:/C\#Learning/web/vscode-git/RayaneGostar/Views/Shared/_TagRefrences.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UYWdSZWZyZW5jZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#Learning/Web/vscode-git/RayaneGostar/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/C\#Learning/web/vscode-git/RayaneGostar/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#Learning/Web/vscode-git/RayaneGostar/Views/_ViewImports.cshtml]
+[D:/C\#Learning/web/vscode-git/RayaneGostar/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#Learning/Web/vscode-git/RayaneGostar/Views/_ViewStart.cshtml]
+[D:/C\#Learning/web/vscode-git/RayaneGostar/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

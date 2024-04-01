@@ -20,10 +20,10 @@ namespace RayaneGostar.Domain.Models.ViewModels.Account
     }
     public enum LoginUserResult
     {
-       NotFound,
+        NotFound,
         NotActive,
         Success,
         IsBlocked
- 
+
     }
 }

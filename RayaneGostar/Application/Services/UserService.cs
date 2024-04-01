@@ -1,7 +1,7 @@
 using RayaneGostar.Application.Interfaces;
 using RayaneGostar.Domain.Interfaces;
 using RayaneGostar.Domain.Models.Account;
-using RayaneGostar.Domain.Models.ViewModels;
+using RayaneGostar.Domain.Models.ViewModels.Account;
 using RayaneGostar.Infra.Data.Repositories;
 
 namespace RayaneGostar.Application.Services

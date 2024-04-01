@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#Learning\\Web\\vscode-git\\RayaneGostar\\RayaneGostar.csproj": {}
+    "D:\\C#Learning\\web\\vscode-git\\RayaneGostar\\RayaneGostar.csproj": {}
   },
   "projects": {
-    "D:\\C#Learning\\Web\\vscode-git\\RayaneGostar\\RayaneGostar.csproj": {
+    "D:\\C#Learning\\web\\vscode-git\\RayaneGostar\\RayaneGostar.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#Learning\\Web\\vscode-git\\RayaneGostar\\RayaneGostar.csproj",
+        "projectUniqueName": "D:\\C#Learning\\web\\vscode-git\\RayaneGostar\\RayaneGostar.csproj",
         "projectName": "RayaneGostar",
-        "projectPath": "D:\\C#Learning\\Web\\vscode-git\\RayaneGostar\\RayaneGostar.csproj",
+        "projectPath": "D:\\C#Learning\\web\\vscode-git\\RayaneGostar\\RayaneGostar.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\C#Learning\\Web\\vscode-git\\RayaneGostar\\obj\\",
+        "outputPath": "D:\\C#Learning\\web\\vscode-git\\RayaneGostar\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"

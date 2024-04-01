@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using RayaneGostar.Application.Interfaces;
-using RayaneGostar.Domain.Models.ViewModels;
+using RayaneGostar.Domain.Models.ViewModels.Account;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
