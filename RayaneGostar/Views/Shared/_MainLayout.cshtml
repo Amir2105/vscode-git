@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" dir="rtl">
 
 <head>
@@ -7,33 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>@ViewData["Title"]</title>
-    <@Html.Partial("_TagRefrencess.cshtml")
-    <@Html.Partial("_HeaderRefrences.cshtml")
-    @RenderSection("style",false)
-</head>
+    <@Html.Partial("_TagRefrences.cshtml") <@Html.Partial("_HeaderRefrences.cshtml") @RenderSection("style", false)
+        </head>
 
 <body>
     <div class="page-wrapper">
         @await Component.InvokeAsync("SiteHeader")
-        @await Component.InvokeAsync("SiteFooter")
-
-       <main class="main">
+        <main class="main">
             @RenderBody()
         </main>
-
+        @await Component.InvokeAsync("SiteFooter")
     </div>
     <button id="scroll-top" title="Back to Top"><i class="icon-arrow-up"></i></button>
-
-
-
     <div class="container newsletter-popup-container mfp-hide" id="newsletter-popup-form">
         <div class="row justify-content-center">
             <div class="col-10">
                 <div class="row no-gutters bg-white newsletter-popup-content">
                     <div class="col-xl-3-5col col-lg-7 banner-content-wrap">
                         <div class="banner-content text-center">
-                            <img src="/images/popup/newsletter/logo.png" class="logo" alt="logo" width="60"
-                                height="15">
+                            <img src="/images/popup/newsletter/logo.png" class="logo" alt="logo" width="60" height="15">
                             <h2 class="banner-title">دریافت <span>25<light>%</light></span> تخفیف</h2>
                             <p>با عضویت در خبرنامه فروشگاه ما، یک تخفیف 25 درصدی دریافت کنید و از جدیدترین تخفیف ها مطلع
                                 شوید</p>
@@ -60,8 +51,6 @@
             </div>
         </div>
     </div>
-<@Html.Partial("_Mobile")   
-<@Html.Partial("_FooterRefrences")
-@RenderSection("Script", false)
-</body>
+    <@Html.Partial("_Mobile") <@Html.Partial("_FooterRefrences") @RenderSection("Script", false) </body>
+
 </html>
