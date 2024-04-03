@@ -9,7 +9,7 @@ namespace RayaneGostar.ViewComponents
 
         public class SiteHeaderViewComponent : ViewComponent
         {
-            public async Task<IViewComponentResult> InvokeAsync()
+            public IViewComponentResult InvokeAsync()
             {
                 return View("SiteHeader");
             }
@@ -20,7 +20,7 @@ namespace RayaneGostar.ViewComponents
 
         public class SiteFooterViewComponent : ViewComponent
         {
-            public async Task<IViewComponentResult> InvokeAsync()
+            public IViewComponentResult InvokeAsync()
             {
                 return View("SiteFooter");
             }

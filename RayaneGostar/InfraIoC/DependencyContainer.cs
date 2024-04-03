@@ -1,7 +1,7 @@
-namespace RayaneGostar.Infra.IoC
+namespace RayaneGostar.InfraIoC
 {
     public class DependencyContainer
     {
-        
+
     }
 }

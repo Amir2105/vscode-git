@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using RayaneGostar.Domain.Models.Account;
 
-namespace RayaneGostar.Infra.Data.Context
+namespace RayaneGostar.InfraData.Context
 {
     public class RDbContext:DbContext
     {

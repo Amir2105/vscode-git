@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
-using RayaneGostar.Infra.Data.Context;
+using RayaneGostar.InfraData.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
