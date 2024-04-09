@@ -37,9 +37,10 @@ namespace RayaneGostar.Controllers
                 {
                     case RegisterUserResult.MobileExists:
 
-                        TempData[ErrorMessage] = "123";
+                        TempData[ErrorMessage] = "شماره تلفن وارد شده قبلا داخل سیستم ثبت شده است";
                         break;
                     case RegisterUserResult.Success:
+                        TempData[SuccessMessage] = "ثبت نام شما با موفقیت انجام شد";
                         break;
                 }
             }

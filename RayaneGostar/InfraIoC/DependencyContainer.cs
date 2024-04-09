@@ -11,8 +11,17 @@ namespace RayaneGostar.InfraIoC
     {
         public static void RegisterServices(IServiceCollection services)
         {
-            Builder.Services.AddScoped<IPasswordHelper, PasswordHelper>();
+            #region services
             Builder.Services.AddScoped<IUserService, UserService>();
+            #endregion
+
+            #region repositories
             Builder.Services.AddScoped<IUserRepository, UserRepository>();
+            #endregion
+
+            #region tools
+            Builder.Services.AddScoped<IPasswordHelper, PasswordHelper>();
+            #endregion
+
         }
     }
