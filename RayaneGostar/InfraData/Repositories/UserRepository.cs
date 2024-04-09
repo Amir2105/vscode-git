@@ -6,7 +6,7 @@ using RayaneGostar.InfraData.Context;
 using System;
 using System.Threading.Tasks;
 
-namespace RayaneGostar.Infra.Data.Repositories
+namespace RayaneGostar.InfraData.Repositories
 {
     public class UserRepository : IUserRepository
     {

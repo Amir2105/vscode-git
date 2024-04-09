@@ -1,11 +1,13 @@
+using System;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RayaneGostar.Application.Interfaces;
 using RayaneGostar.Application.Services;
 using RayaneGostar.Domain.Interfaces;
-using RayaneGostar.Infra.Data.Repositories;
+using RayaneGostar.InfraData.Repositories;
 using RayaneGostar.InfraData.Context;
+using RayaneGostar.InfraIoC;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,9 +16,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<RDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
-builder.Services.AddScoped<IPasswordHelper,PasswordHelper>();
-builder.Services.AddScoped<IUserService,UserService>();
-builder.Services.AddScoped<IUserRepository,UserRepository>();
+
 
 
 builder.Services.AddAuthentication(options =>
@@ -46,5 +46,12 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+    #region IOC
+    public static Void RegisterService(IServiceCollection services)
+    {
+        DependencyContainer.RegisterServices(services);
+    }
+        
+    #endregion
 
 app.Run();
