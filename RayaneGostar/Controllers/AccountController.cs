@@ -37,7 +37,7 @@ namespace RayaneGostar.Controllers
                 {
                     case RegisterUserResult.MobileExists:
 
-                        //TempData(ErrorMessage) = "123";
+                        TempData[ErrorMessage] = "123";
                         break;
                     case RegisterUserResult.Success:
                         break;

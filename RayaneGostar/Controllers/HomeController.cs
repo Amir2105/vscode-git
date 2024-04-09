@@ -15,6 +15,11 @@ public class HomeController : SiteBaseController
     {
         return View();
     }
+    public IActionResult ContactUs()
+    {
+        return View();
+    }
 
-}    
+
+}
 

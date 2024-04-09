@@ -1,5 +1,10 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using RayaneGostar.Application.Interfaces;
+using RayaneGostar.Application.Services;
+using RayaneGostar.Domain.Interfaces;
+using RayaneGostar.Infra.Data.Repositories;
 using RayaneGostar.InfraData.Context;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +14,11 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<RDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
+builder.Services.AddScoped<IPasswordHelper,PasswordHelper>();
+builder.Services.AddScoped<IUserService,UserService>();
+builder.Services.AddScoped<IUserRepository,UserRepository>();
+
+
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme=CookieAuthenticationDefaults.AuthenticationScheme;
